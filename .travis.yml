@@ -13,5 +13,5 @@ install:
 - curl -X PUT localhost:5984/tire-a-part
 - pip install --user couchapp
 - couchapp push . http://localhost:5984/tire-a-part
-- gem install capybara-webkit rspec
+- gem install --conservative capybara-webkit rspec
 script: xvfb-run rspec spec/features/*
